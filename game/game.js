@@ -2,7 +2,7 @@ var GameState = function(game) {};
 
 GameState.prototype.preload = function() {
     //We're preloading all the assets for the game to avoid any potential load-lag later.
-    game.load.spritesheet('player', 'assets/HeroRunSprite.png', 160, 160);
+    game.load.spritesheet('player', 'assets/heroRunSprite.png', 160, 160);
     game.load.spritesheet('castleDoor', 'assets/castleDoorSprite.png', 169, 243);
     game.load.tilemap('castleLevel', 'assets/tilemap/castleLevel.json', null, Phaser.Tilemap.TILED_JSON);
     game.load.image('castle_tileset', 'assets/tilemap/castle_tileset.png');

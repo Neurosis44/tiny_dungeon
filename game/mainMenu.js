@@ -17,7 +17,7 @@ MainMenuState.prototype.preload = function() {
     game.load.spritesheet('OptionsButton', 'assets/boutonOptionsSprite.png', 300, 112);
     game.load.spritesheet('CharactersButton', 'assets/boutonCharactersSprite.png', 300, 112);
     game.load.spritesheet('QuestsButton', 'assets/boutonQuestsSprite.png', 300, 112);
-    game.load.spritesheet('Hero', 'assets/HeroRunSprite.png', 160, 160);
+    game.load.spritesheet('Hero', 'assets/heroRunSprite.png', 160, 160);
 };
 
 MainMenuState.prototype.create = function() {
