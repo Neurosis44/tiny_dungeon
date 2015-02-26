@@ -4,4 +4,5 @@ var contexte = new Contexte(obstaclesList);
 var game = new Phaser.Game(1248, 768, Phaser.AUTO, 'game');
 game.state.add('gameOverState', GameOverState, false);
 game.state.add('gameState', GameState, false);
+game.state.add('shopState', ShopState, false);
 game.state.add('mainMenuState', MainMenuState, true);

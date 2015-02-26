@@ -36,7 +36,7 @@ MainMenuState.prototype.create = function() {
     
     // Bouton Persos
     var charactersButton = 
-        game.add.button(BUTTON_CHARS_X, BUTTON_CHARS_Y, 'CharactersButton', this.playCallback, this, 0, 0, 1);
+        game.add.button(BUTTON_CHARS_X, BUTTON_CHARS_Y, 'CharactersButton', this.playShop, this, 0, 0, 1);
     
     // Bouton quetes
     var questsButton = 
@@ -65,3 +65,8 @@ launchGame = function() {
 MainMenuState.prototype.playCallback = function(btn) {
    game.state.add('gameState', GameState, true);
 }
+
+MainMenuState.prototype.playShop = function(btn) {
+   game.state.add('shopState', ShopState, true);
+}
+
